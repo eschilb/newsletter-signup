@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Personal Site</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans&display=swap" rel="stylesheet">
+  	<link href="css/standard.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="container">
+		<div class="masthead">NEWSLETTER SIGNUP</div>
+		<div class="subscribeFormWelcome">Sign up to get an occasional newsletter. <br>I promise you won't get spammed with emails.</div>
+ 		<form action="#" th:action="@{/}" th:object="${subscriber}" method="post">
+ 		
+	 		<div class="form-group">
+<!-- 	 			<label>FIRST NAME</label> -->
+	 			<input type="text" class="form-control" placeholder="first name" th:field="*{firstName}" />
+	 		</div>
+	 		
+	 		<div class="form-group">
+<!-- 	 			<label>EMAIL</label> -->
+	 			<input type="text" class="form-control" placeholder="email" th:field="*{email}" />
+	 		</div>
+
+ 			<button type="submit" class="btn">Sign Up</button>
+		</form>
+	</div>
+	<div class="image-container">
+        <!-- image 01 -->
+        <a href="#" class="image__item">
+          <img src="img/image-1.jpg" alt="" class="image">
+        </a>
+
+        <!-- image 02 -->
+        <a href="#" class="image__item">
+          <img src="img/image-2.jpg" alt="" class="image">
+        </a>
+
+        <!-- image 03 -->
+        <a href="#" class="image__item">
+          <img src="img/image-3.png" alt="" class="image">
+        </a>
+
+        <!-- image 04 -->
+        <a href="#" class="image__item">
+          <img src="img/image-4.png" alt="" class="image">
+        </a>
+
+        <!-- image 05 -->
+        <a href="#" class="image__item">
+          <img src="img/image-5.png" alt="" class="image">
+        </a>
+
+  	</div>
+  </body>
+</html>

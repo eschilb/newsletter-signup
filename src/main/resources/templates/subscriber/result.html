@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Subscriber Sign-Up</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans&display=swap" rel="stylesheet">
+<link href="css/standard.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<h1>EUREKA!</h1>
+		<p>Thank you for signing up!</p>
+		<h3>Subscriber:</h3>
+		<p th:text="${firstName}" />
+		<p th:text="${email}" />
+	</div>
+</body>
+</html>
